@@ -1,0 +1,6 @@
+[hooks]
+pre-commit = "cargo check && echo '\n\n' && cargo fmt -- --check"
+pre-push = ".hooks/pre-push.sh"
+
+[logging]
+verbose = true

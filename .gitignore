@@ -1,0 +1,7 @@
+/target
+.env
+.idea
+logs.txt
+data
+migrations
+diesel.toml

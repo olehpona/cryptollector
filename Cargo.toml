@@ -1,0 +1,20 @@
+[package]
+name = "paymenator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+fern = { version = "0.6.2", features = ["colored"] }
+humantime = "2.1.0"
+log = "0.4.22"
+diesel = { version = "2.2.2", features = ["postgres"] }
+dotenvy = "0.15.7"
+tokio = { version =  "1.39.3", features = ["rt-multi-thread", "macros"] }
+tokio-macros = "2.4.0"
+serde = { version = "1.0.208", features = ["derive"] }
+alloy = { version = "0.2.1", features = ["network", "signers" ,"signer-local", "signer-mnemonic", "pubsub", "rpc", "rpc-types", "reqwest-rustls-tls", "provider-http"] }
+futures-util = "0.3.30"
+rand = "0.8.5"
+eyre = "0.6.12"
+actix-web = { version = "4.9.0", features = ["rustls"] }
+thiserror = "1.0.63"
